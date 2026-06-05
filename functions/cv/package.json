@@ -1,0 +1,9 @@
+{
+    "name": "portfolio-cv-api",
+    "version": "1.0.0",
+    "description": "CV API for Tony Fowler's portfolio",
+    "main": "index.js",
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}

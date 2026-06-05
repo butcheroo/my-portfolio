@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    :root{--brand:#0078d4;--muted:#667085;--bg:#f7fafc}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;max-width:900px;margin:48px auto;padding:0 20px;color:#0f172a}
+    header{display:flex;justify-content:space-between;align-items:center;gap:16px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px}
+    h1{color:var(--brand);margin:0}
+    .lead{color:var(--muted);margin-top:8px}
+    .section{margin-top:28px;padding:20px;background:linear-gradient(180deg,#ffffff,var(--bg));border-radius:8px;border:1px solid #eef2f7}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:#eaf6ff;color:var(--brand);padding:8px 12px;border-radius:999px;font-weight:600}
+    .contact .links a{display:inline-block;margin-right:12px;color:var(--brand);text-decoration:none}
+    form{display:flex;flex-direction:column;gap:10px;margin-top:12px;max-width:520px}
+    input[type="text"],input[type="email"],textarea{padding:10px;border:1px solid #e6eef6;border-radius:6px;font-size:14px}
+    button{background:var(--brand);color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:600}
+    footer{margin-top:28px;color:var(--muted);font-size:13px}
+    @media (max-width:640px){header{flex-direction:column;align-items:flex-start}nav a{margin-left:8px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>👋 Hi, I'm Tony</h1>
+      <div class="lead">Solutions Architect | 30 Years Experience | Azure Cloud Specialist</div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>30 years of architecture experience with the last 12 focused on Azure cloud. I work directly with stakeholders to deliver cloud migrations, greenfield projects and POCs through to MVP.</p>
+      <p>Experienced technical leader comfortable bridging business and technology. Currently open to new projects and collaborations.</p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">Azure</span>
+        <span class="skill">Cloud Migration</span>
+        <span class="skill">Solutions Architecture</span>
+        <span class="skill">Stakeholder Management</span>
+        <span class="skill">Greenfield Projects</span>
+        <span class="skill">POC to MVP</span>
+        <span class="skill">Technical Leadership</span>
+        <span class="skill">GitHub</span>
+        <span class="skill">DevOps</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p class="muted">Feel free to reach out via email or GitHub.</p>
+
+      <div class="links">
+        <a href="mailto:tony@foxmax.co.uk">Email</a>
+        <a href="https://github.com/butcheroo" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Tony — Built with HTML & CSS</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
