@@ -1,0 +1,19 @@
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform.lock.hcl
+
+# Node
+node_modules/
+
+# Azure
+local.settings.json
+publish.profile
+
+# OS
+.DS_Store
+Thumbs.db
